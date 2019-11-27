@@ -12,18 +12,6 @@ The goal of the competition is to predict whether or not a DonorsChoose.org proj
 
 
 
-
-## Final Result:
-
-
-| S.No |  Model   | Test Loss | Test AUC-ROC |
-|----- | -------- | --------- | ------------ |
-|  1   | Model- 1 |   0.3942  |    0.7549    |
-|  2   | Model- 2 |  0.40941  |    0.7093    |
-|  3   | Model- 3 |  0.37105  |    0.7496    |
-
-
-
 ## Summary
 
 We have built 3 models for above case study.
@@ -63,3 +51,14 @@ for numeric features, we used same strategy as used in model1.
 Then flatten all output and concatenate using keras concatenate layer.
 
 Then connect to few dense layer. We used ADAMAX as optimizer.
+
+
+
+## Final Result:
+
+
+| S.No |  Model   | Test Loss | Test AUC-ROC |
+|----- | -------- | --------- | ------------ |
+|  1   | Model- 1 |   0.3942  |    0.7549    |
+|  2   | Model- 2 |  0.40941  |    0.7093    |
+|  3   | Model- 3 |  0.37105  |    0.7496    |
