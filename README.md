@@ -10,7 +10,21 @@ How to increase the consistency of project vetting across different volunteers t
 How to focus volunteer time on the applications that need the most assistance
 The goal of the competition is to predict whether or not a DonorsChoose.org project proposal submitted by a teacher will be approved, using the text of project descriptions as well as additional metadata about the project, teacher, and school. DonorsChoose.org can then use this information to identify projects most likely to need further review before approval.
 
+## Data Acquire:
+The data files can be downloaded from https://www.kaggle.com/donorschoose/io
 
+## Feature Discription
+There is some field 'Essay1','Essay2','Essay3','Essay4' which has all text data. We will combine all text data into one coloumn.<br>
+<br>
+<br>
+There are some features which has categorical features. Categorical coloumn are as below,<br>
+'school_state', 'project_subject_categories','project_grade_category','teacher_prefix'.<br>
+<br>
+<br>
+There are some features which has some numeric features. Numerical features coloumn are as follows,<br>
+'teacher_number_of_previously_posted_projects', 'price','quantity' also we did some feature engineering find a numeric value in project_summary whatever digit present is stored as new coloumn 'presence_of_the_numerical_digits'.
+<br>
+<br>
 
 ## Summary
 
