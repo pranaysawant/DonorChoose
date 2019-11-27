@@ -12,6 +12,10 @@ The goal of the competition is to predict whether or not a DonorsChoose.org proj
 
 
 
+
+## Final Result:
+
+
 | S.No |  Model   | Test Loss | Test AUC-ROC |
 |----- | -------- | --------- | ------------ |
 |  1   | Model- 1 |   0.3942  |    0.7549    |
@@ -20,3 +24,42 @@ The goal of the competition is to predict whether or not a DonorsChoose.org proj
 
 
 
+## Summary
+
+We have built 3 models for above case study.
+
+**Model 1**: 
+<br>
+For Text features, we used pre-trained GloVe embedding layer.<br>
+For Categorical features, we used tokenize categorical features uisng in-built keras Tokenizer.<br>
+For numerical features, we standardized using Scikit Learning 'StandardScaler'.
+
+Then flatten all output and concatenate using keras concatenate layer.
+
+Then connect to few dense layer. We used ADAM as optimizer.
+<br>
+<br>
+
+**Model 2**
+
+Here in this model, for text features, we used 'TFIDF' vectorizer instead of GloVe pretrain model.<br>
+Also, we removed those words which had higher IDF and lower IDF values, as most frequent word and most rare words are not important in NLP tasks. So we neglected all those words.
+
+We used the same strategy for "Categoric" and "Numeric" features.
+
+Then flatten all output and concatenate using keras concatenate layer.
+
+Then connect to few dense layer. We used ADAM as optimizer.
+<br>
+<br>
+
+**Model3**
+
+Here in this model, for text features we used same featurization as we did in model1.
+<br>
+for categorical features, we used **OneHot encoding** and featurized all features<br>
+for numeric features, we used same strategy as used in model1.
+
+Then flatten all output and concatenate using keras concatenate layer.
+
+Then connect to few dense layer. We used ADAMAX as optimizer.
